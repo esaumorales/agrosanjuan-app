@@ -3,6 +3,7 @@ import Button from './Button';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { Icon } from '@iconify/react';
+import HeroImage from '@/assets/image/fondo-hero.webp'
 
 const navLinks = [
     { href: '/#about', label: 'Nosotros' },
@@ -63,11 +64,11 @@ export default function Hero() {
             {/* background={src} */}
             <section className="relative h-[calc(100vh-4rem)] w-full flex items-center justify-center text-center text-white">
                 <img
-                    src='waza'
-                    alt='waza'
-                    className="object-cover"
+                    src={HeroImage}
+                    alt='HeroImage'
+                    className="object-cover w-full h-full absolute"
                     priority
-                    data-ai-hint='waza'
+                    data-ai-hint='HeroImage'
                 />
                 <div className="absolute inset-0 bg-black/60" />
                 <div className="relative z-10 max-w-4xl px-4 space-y-4">
