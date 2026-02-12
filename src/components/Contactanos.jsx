@@ -3,15 +3,15 @@ import Button from "./ui/Button";
 
 export default function Contactanos() {
     return (
-        <section className="flex flex-row w-full h-auto justify-between px-8 font-headline py-12 gap-24 text-primary">
-            <div className="w-1/2 space-y-4">
+        <section className="flex flex-col-reverse md:flex-row w-full h-auto justify-between px-8 md:px-24 font-headline py-12 gap-12 md:gap-24 text-primary">
+            <div className="w-full md:flex-1 space-y-4">
                 <div>
                     <h1 className="text-2xl font-bold">Contáctanos</h1>
                 </div>
                 <div>
                     <p>
                         ¿Interesado en nuestros productos o tiene alguna consulta?
-                        Completa el fomrulario y nuestro equipo se pondrá en contacto con usted a la brevedad.
+                        Completa el formulario y nuestro equipo se pondrá en contacto con usted a la brevedad.
                     </p>
                 </div>
                 <div>
@@ -24,7 +24,7 @@ export default function Contactanos() {
                     </form>
                 </div>
             </div>
-            <div className="w-1/2 space-y-4">
+            <div className="w-full md:flex-1 space-y-4">
                 <div>
                     <h2 className="text-2xl font-bold">Información de Contacto</h2>
                 </div>
