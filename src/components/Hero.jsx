@@ -1,5 +1,5 @@
 import LOGOSANJUAN from '@/assets/image/logo-sanjuan.png'
-import Button from './Button';
+import Button from './ui/Button';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { Icon } from '@iconify/react';
