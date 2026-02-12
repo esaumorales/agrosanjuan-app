@@ -15,8 +15,8 @@ export default function Button(props) {
     const disabledClass = disabled ? 'opacity-50 cursor-not-allowed' : '';
     const link = props.link || '';
     return (
-        <Link to={link} className={className + ' ' + sizeClass + ' ' + roundedClass + ' ' + disabledClass} onClick={onClick} disabled={disabled}>
+        <Link to={link || '#'} className={`${className} ${sizeClass} ${roundedClass} ${disabledClass} ${props.className || ''}`} onClick={onClick} disabled={disabled}>
             {props.text}
         </Link>
     );
-}
+}   

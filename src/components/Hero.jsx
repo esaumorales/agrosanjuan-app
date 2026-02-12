@@ -20,7 +20,7 @@ export default function Hero() {
         <div className='flex flex-col h-full w-full'>
             <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-white/90 backdrop-blur supports-[backdrop-filter]:bg-white/60 px-8">
                 <div className="container flex h-16 items-center justify-between ">
-                    <img src={LOGOSANJUAN} alt="Logo San Juan" className='w-16 h-16 ' />
+                    <img src={LOGOSANJUAN} alt="Logo San Juan" className='w-20 h-20 ' />
                     <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
                         {navLinks.map((link) => (
                             <Link
@@ -33,7 +33,7 @@ export default function Hero() {
                         ))}
                     </nav>
                     <div className="flex items-center gap-2">
-                        <Button className="hidden sm:flex" variant="link" text='Contáctanos' />
+                        <Button className="hidden md:flex" variant="link" text='Contáctanos' />
                         <button
                             className="md:hidden p-2"
                             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -78,7 +78,9 @@ export default function Hero() {
                     <p className="mt-6 text-lg md:text-xl max-w-3xl mx-auto">
                         Cultivamos las naranjas más selectas, combinando tradición y tecnología para ofrecer un sabor y una frescura inigualables.
                     </p>
-                    <Button size="lg" className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90 transition-colors" text='Nuestros Productos' />
+                    <div>
+                        <Button size="lg" text='Nuestros Productos' />
+                    </div>
                 </div>
             </section>
         </div>
