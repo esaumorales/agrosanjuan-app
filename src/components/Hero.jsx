@@ -72,13 +72,17 @@ export default function Hero() {
                 />
                 <div className="absolute inset-0 bg-black/60" />
                 <div className="relative z-10 max-w-4xl px-4 space-y-4">
-                    <h1 className="text-4xl font-extrabold tracking-tight md:text-6xl lg:text-7xl font-headline">
-                        De Nuestra Tierra a Tu Mundo: Naranjas de Exportación
-                    </h1>
-                    <p className="mt-6 text-lg md:text-xl max-w-3xl mx-auto">
-                        Cultivamos las naranjas más selectas, combinando tradición y tecnología para ofrecer un sabor y una frescura inigualables.
-                    </p>
-                    <div>
+                    <div className='w-full'>
+                        <h1 className="text-4xl font-extrabold tracking-tight md:text-6xl lg:text-7xl font-headline">
+                            De Nuestra Tierra a Tu Mundo: Naranjas de Exportación
+                        </h1>
+                    </div>
+                    <div className='w-full'>
+                        <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto">
+                            Cultivamos las naranjas más selectas, combinando tradición y tecnología para ofrecer un sabor y una frescura inigualables.
+                        </p>
+                    </div>
+                    <div className='mt-6'>
                         <Button size="lg" text='Nuestros Productos' />
                     </div>
                 </div>
