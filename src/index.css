@@ -12,3 +12,8 @@
     --color-background: #f9fafb;
     --color-border: #e5e7eb;
 }
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}

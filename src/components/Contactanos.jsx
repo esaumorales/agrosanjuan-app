@@ -3,7 +3,7 @@ import Button from "./ui/Button";
 
 export default function Contactanos() {
     return (
-        <section className="flex flex-col-reverse md:flex-row w-full h-auto justify-between px-8 md:px-24 font-headline py-12 gap-12 md:gap-24 text-primary">
+        <section id="contact" className="flex flex-col-reverse md:flex-row w-full h-auto justify-between px-8 md:px-24 font-headline py-12 gap-12 md:gap-24 text-primary">
             <div className="w-full md:flex-1 space-y-4">
                 <div>
                     <h1 className="text-2xl font-bold">Contáctanos</h1>
