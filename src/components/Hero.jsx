@@ -18,15 +18,15 @@ export default function Hero() {
 
     return (
         <div className='flex flex-col h-full w-full'>
-            <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 px-8">
-                <div className="container flex h-16 items-center justify-between">
-                    <img src={LOGOSANJUAN} alt="Logo San Juan" className='w-16 h-16' />
+            <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-white/90 backdrop-blur supports-[backdrop-filter]:bg-white/60 px-8">
+                <div className="container flex h-16 items-center justify-between ">
+                    <img src={LOGOSANJUAN} alt="Logo San Juan" className='w-16 h-16 ' />
                     <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
                         {navLinks.map((link) => (
                             <Link
                                 key={link.href}
                                 href={link.href}
-                                className="text-muted-foreground transition-colors hover:text-foreground"
+                                className="text-primary transition-colors hover:text-secondary"
                             >
                                 {link.label}
                             </Link>
@@ -50,7 +50,7 @@ export default function Hero() {
                                 <Link
                                     key={link.href}
                                     href={link.href}
-                                    className="text-muted-foreground transition-colors hover:text-foreground"
+                                    className="text-primary transition-colors hover:text-secondary"
                                     onClick={() => setIsMenuOpen(false)}
                                 >
                                     {link.label}

@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+@theme {
+    --font-headline: 'Alegreya', serif;
+    --font-body: 'Manrope', sans-serif;
+    --font-mono: 'Roboto', sans-serif;
+
+    --color-primary: #677e6d;
+    --color-secondary: #16a34a;
+    --color-accent: #15803d;
+    --color-text: #111827;
+    --color-background: #f9fafb;
+    --color-border: #e5e7eb;
+}

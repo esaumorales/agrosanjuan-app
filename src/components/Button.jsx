@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Button(props) {
     const variant = props.variant || 'primary' || 'secondary' || 'outline' || 'link';
     const className = variant === 'primary' ? 'bg-green-500 ' :
@@ -11,9 +13,10 @@ export default function Button(props) {
     const onClick = props.onClick || (() => { });
     const disabled = props.disabled || false;
     const disabledClass = disabled ? 'opacity-50 cursor-not-allowed' : '';
+    const link = props.link || '';
     return (
-        <button className={className + ' ' + sizeClass + ' ' + roundedClass + ' ' + disabledClass} onClick={onClick} disabled={disabled}>
+        <Link to={link} className={className + ' ' + sizeClass + ' ' + roundedClass + ' ' + disabledClass} onClick={onClick} disabled={disabled}>
             {props.text}
-        </button>
+        </Link>
     );
 }
