@@ -32,7 +32,9 @@ export default function Hero() {
                         ))}
                     </nav>
                     <div className="flex items-center gap-2">
-                        <Button className="hidden md:flex" variant="link" text='Contáctanos' />
+                        <div className="hidden md:flex">
+                            <Button variant="link" text='Contáctanos' />
+                        </div>
                         <button
                             className="md:hidden p-2"
                             onClick={() => setIsMenuOpen(!isMenuOpen)}
