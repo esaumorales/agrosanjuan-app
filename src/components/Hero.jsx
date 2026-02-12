@@ -8,7 +8,6 @@ import HeroImage from '@/assets/image/fondo-hero.webp'
 const navLinks = [
     { href: '/#about', label: 'Nosotros' },
     { href: '/#products', label: 'Productos' },
-    { href: '/#process', label: 'Proceso' },
     { href: '/#contact', label: 'Contacto' },
 ];
 
