@@ -15,7 +15,7 @@ export default function Products() {
                     Desde la clásica Valencia para zumo hasta la exótica Sanguina, descubre la variedad y calidad que nos distingue.
                 </p>
             </div>
-            <div className="flex flex-row justify-center gap-4 flex-wrap">
+            <div className="flex flex-row justify-center gap-16 flex-wrap">
                 {products.slice(0, 3).map((product) => (
                     <Card
                         key={product.id}

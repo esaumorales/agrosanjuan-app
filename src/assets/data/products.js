@@ -14,73 +14,20 @@ const products = [
         "image": NaranjaValenciaImage,
         "category": "Naranjas de Zumo",
         "season": "Finales de primavera a verano",
-        "origin": "Valencia, España"
+        "origin": "Pichanaki, Perú"
     },
     {
         "id": 2,
-        "name": "Naranja Navel",
-        "slug": "naranja-navel",
+        "name": "Naranja Cara Cara",
+        "slug": "naranja-cara-cara",
         "shortDescription": "Ideal para comer fresca, dulce y sin semillas.",
-        "description": "La Naranja Navel es la naranja de mesa por excelencia. Se reconoce fácilmente por su 'ombligo' en la base. Es fácil de pelar, no tiene semillas y su pulpa es firme, jugosa y muy dulce. Perfecta para comer a gajos, en ensaladas o postres.",
+        "description": "La Naranja Cara Cara es una variedad de naranja dulce que se caracteriza por su pulpa de color rosado o rojizo, similar a la sandía. Es una naranja de mesa, fácil de pelar y sin semillas. Su sabor es dulce y refrescante, con notas que recuerdan a la cereza o frutos rojos.",
         "price": 3.00,
         "unit": "kg",
         "image": NaranjaNavelImage,
         "category": "Naranjas de Mesa",
         "season": "Invierno a principio de primavera",
-        "origin": "Valencia, España"
-    },
-    {
-        "id": 3,
-        "name": "Naranja Sanguina",
-        "slug": "naranja-sanguina",
-        "shortDescription": "Exótica y refrescante, con un toque único.",
-        "description": "La Naranja Sanguina destaca por el color rojizo de su pulpa y su jugo, debido a la presencia de antocianinas. Su sabor es más complejo, con notas que recuerdan a la frambuesa o la uva. Es muy apreciada en la gastronomía gourmet y para la elaboración de cócteles y postres sofisticados.",
-        "price": 3.50,
-        "unit": "kg",
-        "image": NaranjaSanguinaImage,
-        "category": "Variedades Exóticas",
-        "season": "Finales de invierno",
-        "origin": "Sicilia (o cultivada localmente)",
-        "stock": "Limitado"
-    },
-    {
-        "id": 4,
-        "name": "Mandarina Clementina",
-        "slug": "mandarina-clementina",
-        "shortDescription": "Pequeña, dulce y fácil de pelar.",
-        "description": "Las Clementinas son las favoritas de los niños por su tamaño pequeño, su piel fácil de retirar y su ausencia de semillas. Son un snack saludable y delicioso, perfecto para llevar a cualquier parte. Su sabor es dulce y aromático.",
-        "price": 2.80,
-        "unit": "kg",
-        "image": "/images/mandarina-clementina.jpg",
-        "category": "Mandarinas",
-        "season": "Otoño e invierno",
-        "origin": "Castellón, España"
-    },
-    {
-        "id": 5,
-        "name": "Limón Verna",
-        "slug": "limon-verna",
-        "shortDescription": "Ácido y aromático, imprescindible en la cocina.",
-        "description": "El Limón Verna es una variedad española clásica, de tamaño grande y piel gruesa. Su zumo es abundante y tiene una acidez equilibrada, ideal para aderezos, bebidas y reposteria. Es un limón de larga conservación.",
-        "price": 1.90,
-        "unit": "kg",
-        "image": "/images/limon-verna.jpg",
-        "category": "Cítricos Ácidos",
-        "season": "Todo el año (principalmente primavera y verano)",
-        "origin": "Murcia, España"
-    },
-    {
-        "id": 6,
-        "name": "Pomelo Star Ruby",
-        "slug": "pomelo-star-ruby",
-        "shortDescription": "Sabor intenso, entre dulce y amargo.",
-        "description": "El Pomelo Star Ruby tiene una pulpa de color rojo intenso y un sabor que equilibra el dulzor con el característico amargor del pomelo. Es muy rico en antioxidantes y vitamina C. Se consume habitualmente en el desayuno, ya sea en jugo o con cuchara.",
-        "price": 2.20,
-        "unit": "kg",
-        "image": "/images/pomelo-star.jpg",
-        "category": "Pomelos",
-        "season": "Invierno y primavera",
-        "origin": "Andalucía, España"
+        "origin": "Pichanaki, Perú"
     }
 ];
 
