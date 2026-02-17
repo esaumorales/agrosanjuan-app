@@ -52,14 +52,25 @@ export default function ProductsPage() {
                         <h2 className="text-5xl font-extrabold text-gray-800 font-headline leading-tight">{product.name}</h2>
                     </div>
 
-                    <div className="flex items-center gap-4">
+                    {/* <div className="flex items-center gap-4">
                         <span className="text-4xl font-bold text-primary">{product.price.toFixed(2)}S/</span>
                         <span className="text-xl text-gray-500 font-medium">por {product.unit}</span>
-                    </div>
+                    </div> */}
 
                     <p className="text-gray-600 text-lg leading-relaxed border-l-4 border-primary pl-6 italic">
                         {product.description}
                     </p>
+
+                    {product.features && (
+                        <div className="py-2">
+                            <h3 className="text-xl font-bold text-gray-800 mb-3">Fortalezas principales:</h3>
+                            <ul className="list-disc pl-5 space-y-2 text-gray-600">
+                                {product.features.map((feature, index) => (
+                                    <li key={index}>{feature}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    )}
 
                     <div className="grid grid-cols-2 gap-6 py-6">
                         <div className="p-4 rounded-xl">

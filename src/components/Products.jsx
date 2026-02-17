@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import Card from "./ui/Card";
-import products from '@/assets/data/products.js';
+import products, { closingText } from '@/assets/data/products.js';
 
 export default function Products() {
     const navigate = useNavigate();
@@ -27,6 +27,13 @@ export default function Products() {
                     />
                 ))}
             </div>
+            {closingText && (
+                <div className="mt-16 max-w-4xl mx-auto text-center">
+                    <p className="text-lg text-gray-700 italic border-t border-gray-200 pt-8">
+                        "{closingText}"
+                    </p>
+                </div>
+            )}
         </section>
     );
 }

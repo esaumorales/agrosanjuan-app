@@ -8,6 +8,7 @@ import Products from './components/Products'
 
 import { Routes, Route } from 'react-router-dom';
 import ProductsPage from './assets/page/ProducsPage';
+import Nosotros from './components/Nosotros'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
             <>
               <Layout />
               <Products />
+              <Nosotros />
               <Contactanos />
             </>
           } />
