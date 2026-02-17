@@ -12,7 +12,7 @@ export default function Products() {
                     Nuestros Productos
                 </h1>
                 <p className="text-center font-body text-primary">
-                    Desde la clásica Valencia para zumo hasta la exótica Sanguina, descubre la variedad y calidad que nos distingue.
+                    Descubre nuestras variedades de naranja, cultivadas con dedicación y calidad.
                 </p>
             </div>
             <div className="flex flex-row justify-center gap-16 flex-wrap">
