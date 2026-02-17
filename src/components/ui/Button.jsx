@@ -20,6 +20,8 @@ const ROUNDED = {
 
 export default function Button({
     text,
+    icon,
+    iconPosition = 'left',
     variant = 'primary',
     size = 'md',
     rounded = 'md',
@@ -35,7 +37,15 @@ export default function Button({
     const roundedClasses = ROUNDED[rounded] || ROUNDED.md;
     const disabledClasses = disabled ? 'opacity-50 cursor-not-allowed pointer-events-none' : '';
 
-    const combinedClassName = `${variantClasses} ${sizeClasses} ${roundedClasses} ${disabledClasses} ${className} inline-flex items-center transition-colors duration-200`;
+    const combinedClassName = `${variantClasses} ${sizeClasses} ${roundedClasses} ${disabledClasses} ${className} inline-flex items-center gap-2 transition-colors duration-200`;
+
+    const content = (
+        <>
+            {icon && iconPosition === 'left' && <span>{icon}</span>}
+            <span>{text}</span>
+            {icon && iconPosition === 'right' && <span>{icon}</span>}
+        </>
+    );
 
     if (link) {
         return (
@@ -46,7 +56,7 @@ export default function Button({
                 aria-disabled={disabled}
                 {...props}
             >
-                {text}
+                {content}
             </Link>
         );
     }
@@ -59,7 +69,7 @@ export default function Button({
             disabled={disabled}
             {...props}
         >
-            {text}
+            {content}
         </button>
     );
 }   

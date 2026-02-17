@@ -3,7 +3,11 @@ import './App.css'
 import Contactanos from './components/Contactanos'
 import Footer from './components/Footer'
 import Layout from './layout/Layout'
+import Products from './components/Products'
 
+
+import { Routes, Route } from 'react-router-dom';
+import ProductsPage from './assets/page/ProducsPage';
 
 function App() {
 
@@ -11,8 +15,16 @@ function App() {
     <div className='flex flex-col min-h-screen'>
       <Header />
       <div className='grow'>
-        <Layout />
-        <Contactanos />
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Layout />
+              <Products />
+              <Contactanos />
+            </>
+          } />
+          <Route path="/product/:slug" element={<ProductsPage />} />
+        </Routes>
       </div>
       <div className='shrink-0'>
         <Footer />

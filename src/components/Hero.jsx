@@ -12,7 +12,6 @@ export default function Hero() {
                     src={HeroImage}
                     alt='HeroImage'
                     className="object-cover w-full h-full absolute"
-                    priority
                     data-ai-hint='HeroImage'
                 />
                 <div className="absolute inset-0 bg-black/60" />

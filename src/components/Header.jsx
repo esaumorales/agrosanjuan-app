@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 import Button from './ui/Button';
 import LOGOSANJUAN from '@/assets/image/logo-sanjuan.png';
@@ -12,16 +12,24 @@ const navLinks = [
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const location = useLocation();
+    const isHome = location.pathname === '/';
+
+    const getLinkHref = (href) => {
+        return isHome ? href : `/${href}`;
+    };
 
     return (
         <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-white/90 backdrop-blur supports-backdrop-filter:bg-white/60 px-8">
             <div className="container flex h-16 items-center justify-between ">
-                <img src={LOGOSANJUAN} alt="Logo San Juan" className='w-20 h-20 ' />
+                <a href="/">
+                    <img src={LOGOSANJUAN} alt="Logo San Juan" className='w-20 h-20 ' />
+                </a>
                 <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
                     {navLinks.map((link) => (
                         <a
                             key={link.href}
-                            href={link.href}
+                            href={getLinkHref(link.href)}
                             className="text-primary transition-colors hover:text-secondary"
                         >
                             {link.label}
@@ -47,7 +55,7 @@ export default function Header() {
                         {navLinks.map((link) => (
                             <a
                                 key={link.href}
-                                href={link.href}
+                                href={getLinkHref(link.href)}
                                 className="text-primary transition-colors hover:text-secondary"
                                 onClick={() => setIsMenuOpen(false)}
                             >
